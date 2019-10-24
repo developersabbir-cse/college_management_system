@@ -5,10 +5,21 @@
     @endsection
 
 @section('body')
+
+
+
+
+
+
+
     <div class="main-content">
         <div class="section__content section__content--pl2">
     <div class="row">
         <div class="col-md-12">
+
+
+
+
             <!-- DATA TABLE -->
             <h3 class="title-5 m-b-35">Manage Student</h3>
             <div class="table-data__tool">
@@ -42,7 +53,7 @@
             </div>
             <div class="table-responsive table-responsive-data2"  id="mainTable">
                 <table  class="table table-data2 table-hover">
-                    <thead>
+                    <thead class="table-active">
                     <tr>
                         <th id="name">name</th>
                         <th>roll no</th>
@@ -82,70 +93,32 @@
                         </td>
                         <td>
                             <div class="table-data-feature">
-                                <a href="#" class="item" data-toggle="tooltip" data-placement="top" title="About Name">
+                                <a href="{{ route('student-info',['id' =>$student->id]) }}" onclick="view()" class="item"  title="About {{ $student->student_name }}">
                                     <i class="zmdi  zmdi-face"></i>
                                 </a>
-                                <a href="" class="item" data-toggle="tooltip" data-placement="top" title="Edit">
+                                <a href="#" class="item" data-toggle="tooltip" data-placement="top" title="Edit">
                                     <i class="zmdi zmdi-edit"></i>
                                 </a>
-                                <a href="" class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                <a href="#" class="item" data-toggle="tooltip" data-placement="top" title="Delete">
                                     <i class="zmdi zmdi-delete"></i>
                                 </a>
                             </div>
                         </td>
                     </tr>
                         @endforeach
-
-
                     </tbody>
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </table>
             </div>
             <!-- END DATA TABLE -->
         </div>
     </div>
-            </div>
-            </div>
-
-    <script>
-        function tableM(val){
-            if(val==2){
-                document.getElementById('tab').style.display='block';
+  </div>
+</div>
 
 
 
-            }
-
-        }
-        tableM()
 
 
 
-    </script>
-{{--    <script>--}}
-{{--        function departmentCheck(value){--}}
-{{--                var xmlHttp = new XMLHttpRequest();--}}
-{{--                var serverPage ='http://localhost/college_management_system/public/department-check';--}}
 
-{{--                xmlHttp.onreadystatechange = function () {--}}
-{{--                    if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {--}}
-{{--                        document.getElementById('name').innerText= 'fxxxxxxxxxxxxxxxxxxxxx'--}}
-{{--                    }--}}
-{{--               };--}}
-{{--                xmlHttp.open('GET',serverPage);--}}
-{{--                xmlHttp.send();--}}
-{{--        }--}}
-{{--    </script>--}}
     @endsection

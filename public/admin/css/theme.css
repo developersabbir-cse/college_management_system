@@ -40,6 +40,13 @@ Notes:	decreasing heading by 0.4em with every subsequent heading level
 /*                   GENERIC                           */
 /*-----------------------------------------------------*/
 /* ----- Normalize ----- */
+
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -4515,7 +4522,6 @@ section {
     -webkit-border-bottom-left-radius: 3px;
     -moz-border-radius-bottomleft: 3px;
     border-bottom-left-radius: 3px;
-    vertical-align: top;
 }
 
 .table-data2.table tbody tr td:first-child .au-checkbox {

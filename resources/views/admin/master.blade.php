@@ -100,7 +100,7 @@
 </script>
 
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="{{ asset('/') }}admin/sweetalert2/dist/sweetalert2.all.js"></script>
 <script>
     $(document).ready(function() {
         $('#datepick').datepicker()
@@ -134,9 +134,7 @@
 
 </script>
 
-<script>
 
-</script>
 </body>
 
 </html>

@@ -47,3 +47,7 @@ Route::post('new-department',[
     'uses'  =>'StudentController@newDepartment',
     'as'    =>'new-department'
 ]);
+Route::get('/student/student-info/{id}',[
+    'uses'  =>'StudentController@studentInfo',
+    'as'    =>'student-info'
+]);
